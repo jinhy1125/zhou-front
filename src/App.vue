@@ -13,7 +13,7 @@
 
 <template>
   <el-config-provider namespace="ep">
-    <AddItemForm />
+    <ItemTable />
   </el-config-provider>
 </template>
 

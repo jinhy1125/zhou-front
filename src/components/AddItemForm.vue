@@ -12,15 +12,15 @@
         <el-form-item label="过期时间">
             <el-date-picker v-model="form.expirationDate" type="date" placeholder="选择日期" style="width: 100%" />
         </el-form-item>
-        <el-form-item>
+        <!-- <el-form-item>
             <el-button type="primary" @click="onSubmit">新建</el-button>
             <el-button>取消</el-button>
-        </el-form-item>
+        </el-form-item> -->
     </el-form>
 </template>
   
 <script lang="ts" setup>
-import axios from '@/plugins/axios'
+// import axios from '@/plugins/axios'
 import { reactive } from 'vue'
 
 // do not use same name with ref
@@ -32,10 +32,10 @@ const form = reactive({
 })
 
 const onSubmit = () => {
-    axios.post('item', form)
-        .then(response => {
-            console.log(response.data)
-        }).catch(error => console.error(error));
+    // axios.post('item', form)
+    //     .then((response: { data: any; }) => {
+    //         console.log(response.data)
+    //     }).catch((error: any) => console.error(error));
 }
 </script>
   
